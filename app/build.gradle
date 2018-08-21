@@ -25,4 +25,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'info.hoang8f:android-segmented:1.0.6'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
 }
