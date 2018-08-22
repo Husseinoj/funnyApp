@@ -15,8 +15,7 @@ import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.util.Log;
 
-
-import com.example.android.funnyapp.R;
+import com.funnyApp.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

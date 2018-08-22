@@ -20,7 +20,9 @@ import com.funnyApp.adapter.ViewPagerAdapter;
 import com.funnyApp.data.model.Message;
 import com.funnyApp.helper.CustomViewPager;
 import com.funnyApp.helper.Helper;
+import com.funnyApp.view.fragment.FavoritFragment;
 import com.funnyApp.view.fragment.root.KnowlageRoot;
+import com.funnyApp.view.fragment.root.SearchRoot;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -215,7 +217,6 @@ public class MainActivity extends AppCompatActivity {
         int tabsCount = vg.getChildCount();
         Log.i("TabChild", String.valueOf(tabsCount));
     }
-
 }
 
 

@@ -1,25 +1,23 @@
-package com.funnyApp.view.fragment;
+package com.funnyApp.view.fragment.root;
 
 
 import android.os.Bundle;
-
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.funnyApp.R;
-import com.funnyApp.data.model.Message;
-
-import org.greenrobot.eventbus.EventBus;
+import com.funnyApp.view.fragment.SearchFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ArticleFragment extends Fragment {
+public class SearchRoot extends Fragment {
 
 
-    public ArticleFragment() {
+    public SearchRoot() {
         // Required empty public constructor
     }
 
@@ -28,11 +26,10 @@ public class ArticleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_article, container, false);
-
-        EventBus eventBus=EventBus.getDefault();
-        eventBus.post(new Message("عنوان مقاله"));
-
+        View view= inflater.inflate(R.layout.fragment_search_root, container, false);
+        FragmentTransaction transaction=getFragmentManager().beginTransaction();
+        transaction.replace(R.id.root_search_fragment,new SearchFragment());
+        transaction.commit();
         return view;
     }
 
