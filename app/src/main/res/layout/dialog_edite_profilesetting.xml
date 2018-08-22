@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llmain"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_add_accountnumber"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        android:orientation="vertical"
+        android:weightSum="72">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_title_size"
+
+            android:background="@drawable/draw_top_two_corner_borderless"
+            android:orientation="horizontal"
+            android:weightSum="25">
+
+            <TextView
+                fontPath="@string/fontsIran"
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="23.8"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="ویرایش اطلاعات شخصی"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size"
+                android:typeface="sans"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/colorLightBlue"
+            android:text=""></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal"
+            android:weightSum="35">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.05"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17.7"
+                android:background="@drawable/draw_bg_search"
+                android:orientation="horizontal"
+                android:weightSum="18">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+
+                <EditText
+                    fontPath="@string/fontsIran"
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_between"
+                    android:textColor="@color/text_gray"
+                    android:layout_weight="17"
+                    android:background="@drawable/draw_round_whitebox"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:singleLine="true"
+                    android:gravity="right|center_vertical"
+
+                     />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.58"></LinearLayout>
+
+            <TextView
+                fontPath="@string/fontsIran"
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                android:text="نام:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_between"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"/>
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/colorLightBlue"
+            android:text=""
+            android:textSize="@dimen/text_so_small_size"/>
+        <LinearLayout
+            android:id="@+id/llLastName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal"
+            android:weightSum="35">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.05"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17.7"
+                android:background="@drawable/draw_bg_search"
+                android:orientation="horizontal"
+                android:weightSum="18">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+
+                <EditText
+                    android:gravity="right|center_vertical"
+                    fontPath="@string/fontsIran"
+                    android:id="@+id/etFamily"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="17"
+                    android:textSize="@dimen/text_size_between"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/draw_round_whitebox"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.58"></LinearLayout>
+
+            <TextView
+                fontPath="@string/fontsIran"
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                android:text="نام خانوادگی:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_between"
+                android:typeface="sans"></TextView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/colorLightBlue"
+            android:text=""
+            android:textSize="@dimen/text_so_small_size"></TextView>
+
+        <LinearLayout
+            android:id="@+id/rlNationalCodeBottomBorder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal"
+            android:weightSum="35">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.45"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17.6"
+                android:background="@drawable/draw_bg_search"
+                android:orientation="horizontal"
+                android:weightSum="18">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:orientation="horizontal"
+                        android:weightSum="18">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"></LinearLayout>
+                        <EditText
+                            android:gravity="right|center_vertical"
+                            fontPath="@string/fontsIran"
+                            android:id="@+id/edNationalCode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="17"
+                            android:textSize="@dimen/text_size_between"
+                            android:textColor="@color/text_gray"
+                            android:background="@drawable/draw_round_whitebox"
+                            android:imeOptions="actionNext"
+
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"></LinearLayout>
+
+            <TextView
+                fontPath="@string/fontsIran"
+                android:id="@+id/tvLblRepeatPass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                android:text="شماره ملی:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_between"
+                android:typeface="sans"></TextView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/colorLightBlue"
+            android:text=""
+            android:textSize="@dimen/text_so_small_size"></TextView>
+
+
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/colorLightBlue"
+            android:text=""
+            android:textSize="@dimen/text_size"></TextView>
+
+        <LinearLayout
+            android:id="@+id/rlNameRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <Button
+                fontPath="@string/YekanFont"
+                android:id="@+id/btnClose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@drawable/draw_btn_radius"
+                android:gravity="center"
+                android:text="انصراف"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_between"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"></LinearLayout>
+
+            <Button
+                fontPath="@string/YekanFont"
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@drawable/draw_btn_radius"
+                android:gravity="center"
+                android:text="ثبت"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_between"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/fontsIran"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/draw_button_bg_color"
+            android:text=""
+            android:textSize="@dimen/text_size"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

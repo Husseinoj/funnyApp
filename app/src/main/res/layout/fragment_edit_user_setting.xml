@@ -1,0 +1,637 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:gravity="end"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:weightSum="610">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11.5"
+            android:background="@color/colorWhite" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="600"
+            android:background="#eaeaea"
+            android:orientation="horizontal"
+            android:weightSum="49">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorWhite" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="48"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:weightSum="106">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_title_size"
+                    android:background="@drawable/draw_top_two_corner_borderless"
+                    android:orientation="horizontal"
+                    android:weightSum="35">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"></LinearLayout>
+
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="17"
+                        android:id="@+id/tvProfileTitle"
+                        android:gravity="center"
+                        android:text="مشخصات فردی"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_between"
+                        ></TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"></LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="42"
+
+                    android:orientation="horizontal"
+                    android:weightSum="70">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/draw_radius_bg_bottom_lightblue"
+                        android:weightSum="40">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="31"
+                            android:orientation="horizontal"
+                            android:weightSum="70">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="67.5"
+                                android:orientation="horizontal"
+                                android:weightSum="67.5">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="21"
+                                    android:orientation="vertical"
+                                    android:weightSum="40">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="28.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="21">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.75"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llGetImage"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="15.5"
+                                            android:orientation="vertical"
+                                            android:weightSum="28.5">
+
+
+                                            <RelativeLayout
+                                                android:id="@+id/rlRootProfileImage"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_toLeftOf="@+id/rlRootInfoBox"
+                                                android:layout_weight="22.5">
+
+                                                <RelativeLayout
+                                                    android:layout_marginTop="3dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent">
+
+                                                    <RelativeLayout
+                                                        android:id="@+id/rlProfileImage"
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="50dp"
+
+                                                        android:paddingTop="2dp"
+                                                        android:paddingLeft="2dp"
+                                                        android:paddingRight="2dp"
+                                                        android:layout_alignParentBottom="true"
+                                                        android:background="@drawable/draw_radius_bordersharp"
+                                                        >
+
+                                                        <ImageView
+                                                            android:layout_marginTop="3dp"
+                                                            android:id="@+id/imgPic"
+
+                                                            android:src="@drawable/example"
+
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:scaleType="fitXY"
+                                                            />
+                                                    </RelativeLayout>
+                                                </RelativeLayout>
+                                            </RelativeLayout>
+
+
+                                            <Button
+                                                fontPath="@string/YekanFont"
+                                                android:id="@+id/btnChangePic"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="4"
+                                                android:background="@color/colorBlue"
+                                                android:gravity="center"
+                                                android:text="تغییر تصویر"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/textsmall_size"
+                                                />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="2"></LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="46.5"
+                                    android:orientation="vertical"
+                                    android:weightSum="45">
+
+                                    <TextView
+                                        fontPath="@string/fontsIran"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="" />
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+
+
+                                        <TextView
+                                            fontPath="@string/fontsIran_light"
+                                            android:id="@+id/tvName"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:gravity="right"
+                                            android:imeOptions="actionNext"
+                                            android:singleLine="true"
+                                            android:text="محمد "
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/text_size_between"
+                                            android:typeface="monospace" />
+
+                                        <LinearLayout
+                                            android:id="@+id/llNameColon"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical" />
+
+                                        <TextView
+                                            fontPath="@string/fontsIran"
+                                            android:id="@+id/name"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="6.5"
+                                            android:gravity="center_vertical"
+                                            android:text="نام: "
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size_between"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/llleft"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.8" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+
+
+                                        <TextView
+                                            fontPath="@string/fontsIran_light"
+                                            android:id="@+id/tvLastName"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:gravity="right"
+                                            android:imeOptions="actionNext"
+                                            android:singleLine="true"
+                                            android:text="اجاقی"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/text_size_between"
+                                            android:typeface="monospace" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll3"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/family"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                        <TextView
+                                            fontPath="@string/fontsIran"
+                                            android:id="@+id/family"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/ll20"
+                                            android:layout_weight="6.5"
+                                            android:gravity="center_vertical"
+                                            android:text="نام خانوادگی: "
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size_between"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll20"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.8" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+                                        <TextView
+                                            fontPath="@string/fontsIran_light"
+                                            android:id="@+id/tv_PhoneNumber"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/ll5"
+                                            android:layout_weight="7"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:gravity="right"
+                                            android:imeOptions="actionNext"
+                                            android:singleLine="true"
+                                            android:text="09168420951"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/text_size_between"
+                                            android:typeface="monospace" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll5"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/tvPhoneNumber"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                        <TextView
+                                            fontPath="@string/fontsIran"
+                                            android:id="@+id/tvPhoneNumber"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/ll21"
+                                            android:layout_weight="6.5"
+                                            android:gravity="center_vertical"
+                                            android:text="شماره تلفن همراه: "
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size_between"
+                                             />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll21"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.8" />
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+
+                                        <TextView
+                                            fontPath="@string/fontsIran_light"
+                                            android:id="@+id/edNationalCode"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:gravity="right"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="phone"
+                                            android:singleLine="true"
+                                            android:text="5260041550"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/text_size_between"
+                                            android:typeface="monospace" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll8"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                        <TextView
+                                            fontPath="@string/fontsIran"
+                                            android:id="@+id/tvLblNationalCode"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/ll24"
+                                            android:layout_weight="6.5"
+                                            android:gravity="center_vertical"
+                                            android:text="شماره ملی: "
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size_between"
+                                             />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll24"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.8" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+
+                                        <TextView
+                                            fontPath="@string/fontsIran_light"
+                                            android:id="@+id/tvGender"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:background="@null"
+                                            android:gravity="right"
+                                            android:text="مرد"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/text_size_between"
+                                             />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll81"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                        <TextView
+                                            fontPath="@string/fontsIran"
+                                            android:id="@+id/tvLblsGender"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@+id/ll22"
+                                            android:layout_weight="6.5"
+                                            android:gravity="center_vertical"
+                                            android:text="جنسیت: "
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size_between"
+                                             />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll22"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.8" />
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="6.5"
+                                        android:orientation="horizontal"
+                                        android:weightSum="15">
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:weightSum="40">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"></LinearLayout>
+                            <Button
+                                fontPath="@string/YekanFont"
+                                android:id="@+id/btnChangePass"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="12"
+                                android:background="@drawable/draw_btn_radius"
+                                android:gravity="center"
+                                android:text="تغییر کلمه عبور"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_between"
+                                 />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"></LinearLayout>
+                            <Button
+                                fontPath="@string/YekanFont"
+                                android:id="@+id/btnEdite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="12"
+                                android:background="@drawable/draw_btn_radius"
+                                android:gravity="center"
+                                android:text="ویرایش"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_between"
+                               />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorWhite"></LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorWhite"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:visibility="gone"
+        android:id="@+id/inProccess" />
+</RelativeLayout>
