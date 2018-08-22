@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.funnyApp.adapter.ViewPagerAdapter;
 import com.funnyApp.helper.CustomViewPager;
 import com.funnyApp.helper.Helper;
+import com.funnyApp.view.fragment.root.KnowlageRoot;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

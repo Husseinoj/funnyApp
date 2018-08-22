@@ -1,6 +1,8 @@
 package com.funnyApp.view.fragment;
 
 
+import com.funnyApp.data.model.Article;
+
 import java.util.ArrayList;
 
 /**

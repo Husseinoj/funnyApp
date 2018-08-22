@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
 import com.funnyApp.R;
+import com.funnyApp.adapter.KnowlageAdapter;
 import com.funnyApp.data.model.Article;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
