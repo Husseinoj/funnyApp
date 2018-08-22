@@ -1,4 +1,4 @@
-package com.example.android.funnyapp.data.remote;
+package com.funnyApp.data.remote;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

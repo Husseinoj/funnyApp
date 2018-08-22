@@ -1,10 +1,9 @@
-package com.example.android.funnyapp.data.remote;
+package com.funnyApp.data.remote;
 
 
-
-import com.example.android.funnyapp.data.model.Profile;
-import com.example.android.funnyapp.data.model.Register;
-import com.example.android.funnyapp.data.model.User;
+import com.funnyApp.data.model.Profile;
+import com.funnyApp.data.model.Register;
+import com.funnyApp.data.model.User;
 
 import java.util.HashMap;
 import java.util.List;
@@ -44,7 +43,7 @@ public interface appService {
     Observable<Response<Profile>> editProfile(@Query("access_token") String token, @Body Profile profile);
 
     @PUT("api/change_password")
-    Observable<Response<User>> sendNewPassword(@Query("access_token") String token,  @Body User user);
+    Observable<Response<User>> sendNewPassword(@Query("access_token") String token, @Body User user);
 
     @PUT("/api/upload_avatar")
     Observable<Response<Profile>> editImage(@Query("access_token") String token,  @Body Profile profile);

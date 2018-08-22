@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layoutDirection="ltr"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_title_size"
+
+                android:background="@drawable/draw_top_two_corner_borderless"
+                android:orientation="horizontal"
+                android:weightSum="25">
+
+                <TextView
+                    fontPath="@string/fontsIran"
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="23.8"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="بازیابی رمز عبور"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_between"
+                    android:typeface="sans"></TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"></LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="65"
+                android:orientation="vertical"
+                android:weightSum="73">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorLightBlue"
+                    android:text=""/>
+
+                <LinearLayout
+                    android:id="@+id/llLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:orientation="horizontal"
+                    android:weightSum="50">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        fontPath="@string/fontsIran"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="46"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="چنانچه رمز عبور خود را فراموش کرده‌اید، بر روی دکمه ارسال رمز جدید کلیک کنید تا رمز جدید برای شما از طریق پیامک به تلفن همراه اعلام شده در سیستم ارسال گردد."
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_between"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorLightBlue"
+                    android:text=""
+                    android:textSize="@dimen/text_so_small_size"></TextView>
+                <LinearLayout
+                    android:id="@+id/rlNationalCodeBottomBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="17"
+                    android:background="@color/colorLightBlue"
+                    android:orientation="horizontal"
+                    android:weightSum="30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"></LinearLayout>
+
+                    <EditText
+                        fontPath="@string/fontsIran"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12"
+                        android:id="@+id/etPhone"
+                        android:background="@drawable/draw_round_whitebox"
+                        android:textColorHint="@color/colorLightBlue"
+                        android:maxLength="11"
+
+                        android:inputType="phone"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="شماره تلفن همراه"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_between" />
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="0dp"
+                        android:text="شماره تلفن همراه: "
+                        android:typeface="sans"
+                        android:textSize="@dimen/text_size_between"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_weight="13"></TextView>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@color/colorLightBlue"
+                    android:text=""
+                    android:textSize="@dimen/text_so_small_size"></TextView>
+                <LinearLayout
+                    android:id="@+id/llSendPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:background="@color/colorLightBlue"
+                    android:orientation="horizontal"
+                    android:weightSum="30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"></LinearLayout>
+
+                    <Button
+                        fontPath="@string/YekanFont"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:id="@+id/btnSendNewPass"
+                        android:background="@drawable/draw_btn_radius"
+                        android:text="ارسال رمز جدید"
+                        android:typeface="serif"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_between" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@color/colorLightBlue"
+                    android:textSize="@dimen/text_so_small_size"></FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:orientation="horizontal"
+                    android:weightSum="50">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="47"
+                        android:id="@+id/tvPhone"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="لطفا در صورت بروز مشکل فقط صبور باشید. صبور!!!"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_between"
+                        android:typeface="monospace" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@color/colorLightBlue"
+                    android:text=""
+                    android:textSize="@dimen/text_so_small_size"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:background="@color/colorLightBlue"
+                    android:orientation="horizontal"
+                    android:weightSum="30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="11.5"></LinearLayout>
+
+                    <Button
+                        fontPath="@string/YekanFont"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnClose"
+                        android:layout_weight="7"
+                        android:background="@drawable/draw_btn_radius"
+                        android:text="بازگشت"
+                        android:typeface="serif"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_between" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/colorLightBlue"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text=""
+                    android:textSize="@dimen/text_so_small_size"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

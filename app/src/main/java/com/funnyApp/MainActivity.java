@@ -22,6 +22,7 @@ import com.funnyApp.helper.CustomViewPager;
 import com.funnyApp.helper.Helper;
 import com.funnyApp.view.fragment.FavoritFragment;
 import com.funnyApp.view.fragment.root.KnowlageRoot;
+import com.funnyApp.view.fragment.root.MainProfileFragment;
 import com.funnyApp.view.fragment.root.SearchRoot;
 
 import org.greenrobot.eventbus.EventBus;
@@ -200,7 +201,8 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
 
         mTabLayout.setupWithViewPager(mViewPager);
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), getApplicationContext(), mTabIcons);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(),
+                getApplicationContext(), mTabIcons);
 
         adapter.addFragment(new KnowlageRoot(), "دانستنی ها");
         adapter.addFragment(new FavoritFragment(), "مورد علاقه ها");

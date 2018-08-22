@@ -1,6 +1,7 @@
-package com.example.android.funnyapp.data.remote;
+package com.funnyApp.data.remote;
 
-import com.example.android.funnyapp.helper.Tags;
+
+import com.funnyApp.helper.Tags;
 
 /**
  * Created by android on 4/25/17.
