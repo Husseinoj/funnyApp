@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.funnyApp.adapter.ViewPagerAdapter;
 import com.funnyApp.helper.CustomViewPager;
 import com.funnyApp.helper.Helper;
 
