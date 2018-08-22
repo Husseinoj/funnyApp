@@ -1,4 +1,4 @@
-package com.example.android.funnyapp.helper;
+package com.funnyApp.helper;
 
 import android.app.Activity;
 import android.app.Dialog;

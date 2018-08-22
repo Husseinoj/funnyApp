@@ -1,4 +1,4 @@
-package com.example.android.funnyapp.helper;
+package com.funnyApp.helper;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

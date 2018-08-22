@@ -1,4 +1,4 @@
-package com.example.android.funnyapp.helper;
+package com.funnyApp.helper;
 
 /**
  * Created by Hussein on 12/14/2016.
