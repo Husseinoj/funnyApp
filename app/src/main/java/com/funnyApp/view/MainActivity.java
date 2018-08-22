@@ -1,4 +1,4 @@
-package com.funnyApp;
+package com.funnyApp.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.funnyApp.R;
 import com.funnyApp.adapter.ViewPagerAdapter;
 import com.funnyApp.data.model.Message;
 import com.funnyApp.helper.CustomViewPager;
