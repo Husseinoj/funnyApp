@@ -3,7 +3,7 @@ package com.funnyApp;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.os.Message;
+
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.funnyApp.adapter.ViewPagerAdapter;
+import com.funnyApp.data.model.Message;
 import com.funnyApp.helper.CustomViewPager;
 import com.funnyApp.helper.Helper;
 import com.funnyApp.view.fragment.root.KnowlageRoot;
