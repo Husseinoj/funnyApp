@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.funnyApp.R;
+import com.funnyApp.view.fragment.LoginFragment;
 
 /**
  * A simple {@link Fragment} subclass.

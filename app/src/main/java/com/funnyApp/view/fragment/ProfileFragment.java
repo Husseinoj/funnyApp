@@ -19,6 +19,7 @@ import com.funnyApp.data.model.Message;
 import com.funnyApp.data.model.Profile;
 import com.funnyApp.helper.Tags;
 import com.funnyApp.view.fragment.profile.EditUserSettingFragment;
+import com.funnyApp.view.fragment.profile.MyArticleFragment;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
