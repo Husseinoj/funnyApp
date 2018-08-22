@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightBlue"
+    tools:context="com.example.android.funnyapp.view.fragment.profile.CreateArticleFragment">
+    <FrameLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="37"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            >
+            <EditText
+
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/text_size"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorBlue"
+                fontPath="@string/fontsIran"
+                android:background="@drawable/draw_round_whitebox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:hint="عنوان مطلب"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                ></FrameLayout>
+            <EditText
+                android:textSize="@dimen/text_size"
+                android:imeOptions="actionDone"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/colorBlue"
+                fontPath="@string/fontsIran"
+                android:textAlignment="gravity"
+                android:gravity="top|right"
+                android:background="@drawable/draw_round_whitebox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:hint="توضیحات در مورد مطلب"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></FrameLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="50">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCategoryHolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="49"
+                    android:background="@drawable/draw_round_whitebox_radius"
+                    android:orientation="vertical">
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="@dimen/divider_height_officee" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="48">
+                        />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"></LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="42"
+                            android:orientation="horizontal">
+
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:id="@+id/sp_category"
+                                android:text="فیلتر بر اساس دسته بندی مطلب"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:textAlignment="gravity"
+                                android:gravity="right"
+                                android:textSize="@dimen/text_size"
+                                fontPath="@string/fontsIran"/>
+                            <TextView
+                                android:id="@+id/llRight"
+                                fontPath="@string/fontsIran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text=" "
+                                android:textSize="@dimen/text_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="@dimen/divider_height_officee" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                ></FrameLayout>
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    />
+                <Button
+                    android:textSize="@dimen/text_size_between"
+                    android:id="@+id/btnCreateArticle"
+                    android:textColor="@color/white"
+                    fontPath="@string/YekanFont"
+                    android:background="@drawable/draw_btn_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="انتشار مطلب"
+                    />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    />
+                <Button
+                    android:textSize="@dimen/text_size_between"
+                    android:id="@+id/btnSelectPic"
+                    android:textColor="@color/white"
+                    fontPath="@string/YekanFont"
+                    android:background="@drawable/draw_btn_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="انتخاب عکس"
+                    />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    ></FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+</LinearLayout>
